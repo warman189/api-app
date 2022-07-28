@@ -1,0 +1,101 @@
+.account__settings {
+  background: linear-gradient(180deg, #1B0F36 0%, #2F1C78 79.52%, #321E82 127.24%);
+  display: none;
+  border-radius: 37px 37px 37px 37px;
+  position: absolute;
+  width: 414px;
+  height: 740px;
+  left: -24px;
+  top: -20px;
+  background-color: grey;
+}
+
+.account__settings__show {
+  display: flex;
+  z-index: 1;
+  -webkit-animation: swing-in-left-bck 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-left-bck 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.burger__nav__pop__up {
+  background: linear-gradient(180deg, #1B0F36 0%, #2F1C78 79.52%, #321E82 127.24%);
+  display: none;
+  border-radius: 5px 37px 37px 5px;
+  position: absolute;
+  width: 300px;
+  height: 896px;
+  right: -27px;
+  top: -30px;
+}
+
+.burger__nav__pop__up__show {
+  display: flex;
+  z-index: 1;
+  -webkit-animation: swing-in-right-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-right-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-left-bck {
+  0% {
+    -webkit-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-left-bck {
+  0% {
+    -webkit-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes swing-in-right-bck {
+  0% {
+    -webkit-transform: rotateY(70deg);
+    transform: rotateY(70deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-right-bck {
+  0% {
+    -webkit-transform: rotateY(70deg);
+    transform: rotateY(70deg);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=pop_up_style.css.map */

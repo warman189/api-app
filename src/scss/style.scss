@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('/src/css/pop_up_style.css');
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: .2s all ease;
+}
+
+body {
+    background: #000000;
+}
+
+// ********************Login Page******************** ; 
+
+
+.wrapper__page {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background: linear-gradient(180deg, #7F4CD2 0%, #291865 100%);
+    border-radius: 37px;
+
+    hr {
+        position: absolute;
+        width: 362px;
+        height: 0px;
+        left: 26px;
+        top: 370px;
+        border: 1px solid #FFFFFF;
+    }
+
+}
+
+.wrapper__sign__social {
+    position: relative;
+    display: flex;
+    width: 363px;
+    height: 31px;
+    top: 230px;
+
+    p {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 31px;
+        color: #FFFFFF;
+    }
+
+    .wrapper__sign__social__icons {
+        position: absolute;
+        display: flex;
+        width: 363px;
+        height: 80px;
+        top: 75px;
+        justify-content: space-around;
+
+        .google__sign {
+            cursor: pointer;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: #FFFFFF;
+            border-radius: 48px;
+            right: 230px;
+
+            img {
+                margin: 23px 0px 20px 23px;
+            }
+
+            p {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.12px;
+                color: #FFFFFF;
+            }
+
+            &:active {
+                opacity: 5%;
+            }
+
+        }
+
+        .apple__sign {
+            cursor: pointer;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: #FFFFFF;
+            border-radius: 48px;
+            left: 230px;
+
+            img {
+                margin: 23px 0px 20px 23px;
+            }
+
+            p {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.12px;
+                color: #FFFFFF;
+            }
+
+            &:active {
+                opacity: 5%;
+            }
+        }
+    }
+
+
+    .wrapper__sign__interaction {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 363px;
+        height: 221px;
+        top: 250px;
+
+        .btn__sumbit {
+            cursor: pointer;
+            position: absolute;
+            width: 363px;
+            height: 76px;
+            background: #7F4CD2;
+            border-radius: 25px;
+            border-style: none;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 31px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.186px;
+            color: #FFFFFF;
+
+            &:active {
+                background: #3b2363;
+            }
+        }
+
+        .sign__reg__values {
+            background: linear-gradient(180deg, #472595 0%, #1e1444 79.52%, #000000 127.24%);
+            border-radius: 15px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 372px;
+            height: 550px;
+            bottom: 145px;
+            left: -5px;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+            p {
+                margin-top: 40px;
+            }
+
+            .reg__btn {
+                text-decoration: underline;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                cursor: pointer;
+                color: white;
+
+                &:active {
+                    font-size: 19px;
+                    color: #7e779c;
+                }
+            }
+
+            .sign__user__login {
+                width: 280px;
+                height: 55px;
+                background: #d2c7ff;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+                padding-left: 18px;
+                margin-top: -15px;
+            }
+
+            .sign__user__email {
+                width: 280px;
+                height: 55px;
+                background: #d2c7ff;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+                padding-left: 18px;
+                margin-top: -15px;
+            }
+
+            .sign__user__password {
+                width: 280px;
+                height: 55px;
+                background: #d2c7ff;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+                padding-left: 18px;
+                margin-top: -15px;
+            }
+
+            .sign__user__conf__password {
+                width: 280px;
+                height: 55px;
+                background: #d2c7ff;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                color: #000000;
+                padding-left: 18px;
+                margin-top: -15px;
+            }
+        }
+
+    }
+
+    .sign__registration {
+        cursor: pointer;
+        display: flex;
+        margin-top: 177px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.186px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+
+        &:active {
+            opacity: 5%;
+        }
+    }
+}
+
+
+
+// Title;
+
+.login__page__title {
+    position: absolute;
+    margin: 60px 0px 0px 25px;
+    height: 78px;
+    width: 282px;
+
+    .login__text {
+        position: relative;
+        font-size: 34px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 54px;
+        color: #FFFFFF;
+    }
+
+    .login__details {
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+}
+
+.login__page__inputs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    height: 160px;
+    width: 364px;
+
+    .login__input {
+        background: #2B1A6C;
+        border: none;
+        border-radius: 18px;
+        margin: 30px 0px 0px 0px;
+        outline: none;
+        height: 65px;
+        width: 95%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        padding-left: 18px;
+    }
+
+    .pass__input {
+        background: #2B1A6C;
+        border: none;
+        border-radius: 18px;
+        margin: 30px 0px 0px 0px;
+        outline: none;
+        height: 65px;
+        width: 95%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        padding-left: 18px;
+    }
+
+    p {
+        cursor: pointer;
+        margin: 0px 0px -30px 0px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+
+        &:active {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .forgot__pass__output {
+        position: fixed;
+        margin: 25px 0px 0px -2px;
+        display: flex;
+        width: 370px;
+        height: 175px;
+        z-index: 9999;
+        background: linear-gradient(360deg, #7F4CD2 0%, #291865 100%);
+        border-radius: 10px;
+        box-shadow: 0px 20px 25px 5px rgba(39, 5, 78, 0.678);
+        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+        .close__btn {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            width: 15px;
+            height: 15px;
+
+            img {
+                width: 15px;
+                height: 15px;
+
+                &:active {
+                    opacity: 5%;
+                }
+            }
+        }
+
+        .reset__email__input {
+            background: #d2c7ff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            outline: none;
+            height: 55px;
+            width: 280px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #000000;
+            padding-left: 18px;
+            margin-top: 45px;
+        }
+    }
+
+    .fo__pass__output__btn {
+        cursor: pointer;
+        position: absolute;
+        width: 98px;
+        height: 36px;
+        background: #7f4cd200;
+        border-radius: 8px;
+        border-style: none;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 9px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1.186px;
+        color: #d2c7ff;
+        margin-left: 135px;
+        margin-top: 120px;
+
+        &:active {
+            font-size: 19px;
+            color: #7e779c;
+        }
+    }
+
+}
+
+
+.forgot__pass__output__Open {
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.forgot__pass__output__Close {
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) reverse both;
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) reverse both;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+.show__pass {
+    cursor: pointer;
+    position: absolute;
+    margin: 118px 0px 0px 300px;
+    background: url(/src/ico/icons/login__page__ico/hidden__eye.png);
+    width: 36px;
+    height: 36px;
+
+    &:active {
+        opacity: 5%;
+    }
+}
+
+
+// ********************Intro Page******************** ; 
+
+.wrapper__intro__page {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background: linear-gradient(180deg, #622FB5 0%, #1B0F36 100%);
+    border-radius: 37px;
+
+    .cloud__snow {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 42px;
+        top: 70px;
+        animation: move 3s infinite;
+    }
+
+    .half__moon {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 233px;
+        top: 152px;
+        animation: up 3s infinite;
+
+        img {
+            filter: drop-shadow(21.6667px 21.6667px 21.6667px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    .full__sun {
+        position: absolute;
+        width: 130px;
+        height: 139px;
+        left: 42px;
+        top: 246px;
+        animation: right 3s infinite;
+
+        img {
+            filter: drop-shadow(23.1667px 23.1667px 23.1667px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    .sun__with__clouds {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        left: 233px;
+        top: 385px;
+        animation: move 3s infinite;
+
+        img {
+            filter: drop-shadow(22px 22px 22px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    .introduce__title {
+        position: absolute;
+        width: 264px;
+        height: 48px;
+        left: 25px;
+        top: 582px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    .introduce__text {
+        position: absolute;
+        width: 274px;
+        height: 48px;
+        left: 25px;
+        top: 639px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    .btn__start {
+        cursor: pointer;
+        position: absolute;
+        width: 364px;
+        height: 98px;
+        left: 25px;
+        top: 757px;
+        background: #7F4CD2;
+        border-radius: 25px;
+        border-style: none;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 31px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.186px;
+        color: #FFFFFF;
+
+        &:active {
+            background: #3b2363;
+        }
+    }
+
+    #cloud:after {
+        content: '';
+        background: rgba(255, 255, 255);
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        top: -50px;
+        left: 50px;
+    }
+
+    #cloud:before {
+        content: '';
+        background: rgba(255, 255, 255);
+        position: absolute;
+        width: 170px;
+        height: 150px;
+        border-radius: 50%;
+        top: -90px;
+        right: 40px;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translatex(0);
+        }
+
+        50% {
+            transform: translatex(-10px);
+        }
+    }
+
+    @keyframes up {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes right {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(20px);
+        }
+    }
+}
+
+
+// ********************Home Page******************** ;
+
+.wrapper__home__page {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background: #431098;
+    border-radius: 37px;
+
+    .wrapper__header {
+        position: relative;
+        width: 414px;
+        height: 381px;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg, #1B0F36 0%, #2F1C78 79.52%, #321E82 127.24%);
+        border-radius: 37px;
+
+        .account__button {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 24px;
+
+            :active {
+                opacity: 15%;
+            }
+        }
+
+
+
+        .burger__btn {
+            cursor: pointer;
+            position: absolute;
+            right: 27px;
+            top: 30px;
+
+            :active {
+                opacity: 15%;
+            }
+        }
+
+        .wrapper__weather__info {
+            position: absolute;
+            width: 364px;
+            height: 87px;
+            left: 25px;
+            top: 163px;
+
+            .weather__info__city {
+                position: absolute;
+                width: 161px;
+                height: 63px;
+
+                .city__info {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 42px;
+                    color: #FFFFFF;
+                }
+
+                .date__degree {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12.9053px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .weather__info__degree {
+                position: absolute;
+                width: 125px;
+                height: 63px;
+                left: 260px;
+                top: -10px;
+
+                .weather__degree {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: #FFFFFF;
+                }
+
+                .weather__sky {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17.3313px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .wrapper__details {
+            position: absolute;
+            height: 14px;
+            width: 122px;
+            left: 146px;
+            top: 337px;
+
+            p {
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.6);
+                -webkit-animation: opacityColor 5s infinite alternate;
+                animation: opacityColor 2s infinite alternate;
+
+            }
+
+            .swipe__btn {
+                cursor: pointer;
+                position: absolute;
+                margin: 5px 0px 0px 45px;
+
+            }
+
+            .swipe__btn:active {
+                opacity: 15%;
+            }
+        }
+
+    }
+
+    .wrapper__weather__block {
+        display: flex;
+        position: relative;
+        width: 364px;
+        height: 215px;
+        top: 30px;
+
+        .weather__block__first {
+            display: flex;
+            background: linear-gradient(178.92deg, #FF2E53 1.45%, #FEDA42 63.48%, #FEA747 101.84%);
+            border-radius: 22px;
+            position: absolute;
+            width: 172px;
+            height: 215px;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+        }
+
+        .weather__block__second {
+            display: flex;
+            background: linear-gradient(0deg, #6E7C84 0%, #668BA7 108.81%);
+            border-radius: 22px;
+            position: absolute;
+            width: 172px;
+            height: 215px;
+            right: 0;
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .wrapper__weather__hourly {
+        display: flex;
+        position: relative;
+        width: 364px;
+        height: 112px;
+        top: 50px;
+
+        p {
+            position: absolute;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+        .weather__info__block {
+            width: 76px;
+            height: 76px;
+            background: #622FB5;
+            border-radius: 16px;
+            margin: 35px 8px;
+        }
+
+        .arrow__open__info {
+            cursor: pointer;
+            opacity: 25%;
+            position: absolute;
+            box-sizing: border-box;
+            box-sizing: border-box;
+            position: absolute;
+            left: 98.79%;
+            right: -1.21%;
+            top: 58.25%;
+            transform: rotate(270deg);
+
+
+        }
+
+        .arrow__open__info:active {
+            opacity: 15%;
+        }
+
+    }
+
+    .wrapper__nav__footer {
+        background: #7F4CD2;
+        border-radius: 10px 10px 37px 37px;
+        display: flex;
+        position: absolute;
+        width: 414px;
+        height: 64px;
+        bottom: 0;
+        left: 0;
+
+        div {
+            cursor: pointer;
+        }
+
+        div:active {
+            opacity: 15%;
+        }
+    }
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+@keyframes opacityColor {
+    0% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
